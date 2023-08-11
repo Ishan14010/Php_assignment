@@ -1,0 +1,82 @@
+/* reset some default browser styles*/
+body, h1, h2, p, form, input, button, a {
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* page styles*/
+
+body{
+    background-color: #cbc6c6;
+    text-align:center;
+    padding: 20px;
+}
+.container{
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius:5px;
+    box-shadow: 0 2px 4px rgba(31, 1, 1, 0.1);
+}
+/* Form styles*/
+form {
+    margin-top:20px;
+}
+
+label, input{
+    display: block;
+    margin-bottom:10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]
+{width: 100px;
+    padding: 10px;
+    border: 1 px solid #ccc;
+    border-radius: 4px;}
+    
+  button{
+    background-color: 3498db;
+    color:#fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius:4px;
+    cursor: pointer;
+  }
+
+  /* Success page styles */
+.success-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.success-container h1 {
+    color: #27ae60;
+    margin-bottom: 10px;
+}
+
+.success-container p {
+    color: #333;
+}
+
+.success-container a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 480px) {
+    .container, .success-container {
+        max-width: 90%;
+    }
+}
+
+  
+
+

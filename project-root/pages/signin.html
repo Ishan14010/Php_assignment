@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Include a CSS stylesheet -->
+    <title>Sign In</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign In</h1>
+        <form action="../php/create_user.php" method="post"> <!-- Set up a form to submit user login data to create_user.php -->
+
+            <label for="loginUsername">Username/Email:</label> <!-- Label for username/email input field -->
+            <input type="text" id="loginUsername" name="loginUsername" required> <!-- Text input for username/email, required field -->
+
+            <label for="loginPassword">Password:</label> <!-- Label for password input field -->
+            <input type="password" id="loginPassword" name="loginPassword" required> <!-- Password input field, required field -->
+
+            <button type="submit">Log In</button> <!-- Submit button to initiate the login process -->
+        </form>
+    </div>
+</body>
+</html>

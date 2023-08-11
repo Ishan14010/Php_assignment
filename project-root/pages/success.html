@@ -1,0 +1,28 @@
+<?php
+// Start or resume the existing session
+session_start();
+
+// Check if the "user_id" session variable is not set, indicating the user is not logged in
+if (!isset($_SESSION["user_id"])) {
+    // Redirect the user to the sign-in page
+    header("Location: signin.html");
+    exit; // Halt further script execution
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Login Success</title>
+</head>
+<body>
+    <div class="success-container">
+    <h1>Welcome to the Restricted Area!</h1>
+    <p>This content is only visible to logged-in users.</p>
+    <a href="../php/logout.php">Log Out</a>
+    </div>
+</body>
+</html>
